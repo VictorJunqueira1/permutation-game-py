@@ -137,9 +137,9 @@ class PermutacaoJogo(tk.Tk):
 
     def destaque_permutacao(self):
         for _ in range(3):
-            self.resultado_label.config(text=f"A permutação correta era: {self.permutacao_correta}", fg="#ff0000")
-            self.after(500, lambda: self.resultado_label.config(text=f"A permutação correta era: {self.permutacao_correta}", fg="#000000"))
-            self.after(1000, lambda: self.resultado_label.config(text=f"A permutacao correta era: {self.permutacao_correta}", fg="#ff0000"))
+            self.resultado_label.config(text=f"Parabéns! A permutação correta era: {self.permutacao_correta}", fg="#ff0000")
+            self.after(500, lambda: self.resultado_label.config(text=f"Parabéns! A permutação correta era: {self.permutacao_correta}", fg="#000000"))
+            self.after(1000, lambda: self.resultado_label.config(text=f"Parabéns! A permutação correta era: {self.permutacao_correta}", fg="#ff0000"))
 
     def encerrar_jogo(self):
         self.destroy()
